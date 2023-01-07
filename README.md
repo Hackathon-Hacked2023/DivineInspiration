@@ -1,2 +1,4 @@
-# DivineInspiration
-Sentiment Analysis tool
+# DivineInspiration    
+Sentiment Analysis tool    
+App Name: ToneTeller    
+Members: 
