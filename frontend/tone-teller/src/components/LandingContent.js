@@ -171,7 +171,8 @@ export default function Hero() {
                 Find a written communication to analyze
               </p>
               <p className="body-text">
-                Copy or select any phrase that you are not sure the tone of!
+                All you need to start using ToneTeller is a text that you wish to decifer!
+
               </p>
             </div>
           </div>
@@ -257,7 +258,7 @@ export default function Hero() {
                 <img src="/images/developer4.png"></img>
               </div>
               <p className="heading-4">YUI</p>
-              <p className="heading-6">Role role</p>
+              <p className="heading-6">Frontend developer</p>
             </div>
           </div>
 
@@ -267,7 +268,7 @@ export default function Hero() {
                 <img src="/images/developer3.png"></img>
               </div>
               <p className="heading-4">TRINITY</p>
-              <p className="heading-6">Role role</p>
+              <p className="heading-6">Frontend developer</p>
             </div>
 
             <div className="meet-the-team-column">
@@ -275,7 +276,7 @@ export default function Hero() {
                 <img src="/images/developer1.png"></img>
               </div>
               <p className="heading-4">JULIA</p>
-              <p className="heading-6">Role role</p>
+              <p className="heading-6">Backend developer</p>
             </div>
           </div>
 
