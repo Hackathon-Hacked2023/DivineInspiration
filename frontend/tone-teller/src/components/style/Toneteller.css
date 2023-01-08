@@ -1,0 +1,14 @@
+.toneteller-div {
+    padding: 20px;
+}
+
+.toneteller-input-div {
+    display: flex;
+     gap: 10px;
+}
+
+.toneteller-input-div > input {
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
