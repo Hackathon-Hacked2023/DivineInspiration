@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 
-
-// display hello world when routed to the landing page
+// display header and textbox when routed to the landing page
 export default function Landing() {
   const [data,setData]=useState(null)
   const [print,setPrint]=useState(false)
@@ -14,16 +13,13 @@ export default function Landing() {
   return (
     // add textbox
     <div className="App">
-      {/* {
+      {
         print?
+        <h1>{data}</h1>
         :null
-      } */}
-      <h1>Enter a prompt</h1>
+      }
       <input type="text" onChange={getData}/>
       <button onClick={()=>setPrint(true)} >Analyze</button>
     </div>
   );
 }
-
-
-
