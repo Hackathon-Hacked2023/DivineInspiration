@@ -8,7 +8,7 @@ https://hackathon-hacked2023.github.io/DivineInspiration/
 Link to access DivineInspiration's Devpost page:
 https://devpost.com/software/toneteller
 
-![toneteller1](https://user-images.githubusercontent.com/90366819/211209123-13af2b9c-f248-45bd-af01-be72a2532a95.png)
+![image](https://user-images.githubusercontent.com/90366819/211211650-a9386e6e-ce7d-438b-8568-ce72e0781db3.png)
 
 <img width="960" alt="happy" src="https://user-images.githubusercontent.com/90366819/211210494-c2f6b42b-8c2e-4d10-9a80-c1804650cb9d.PNG">
 
