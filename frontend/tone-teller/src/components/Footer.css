@@ -1,3 +1,30 @@
+.footer-div {
+  width: 100%;
+  text-align: center;
+  background-color: var(--yellow-400);
+  padding: 20px;
+  padding-top: 40px;
+  border-top: 2px solid #000;
+}
+
+.footer-img {
+  height: 3rem;
+  width: auto;
+}
+
+.footer-img > img {
+  height: 100%;
+  width: auto;
+}
+
+.footer-div > .heading-6 {
+  margin-bottom: 20px;
+}
+
+.footer-div > .body-text {
+  margin-bottom: 20px;
+}
+
 .footer-container {
   background-color: #242424;
   padding: 2rem 0 2rem 0;
