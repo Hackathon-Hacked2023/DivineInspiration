@@ -7,11 +7,11 @@ import "./App.css";
 import NavHeader from "./components/NavHeader";
 import Footer from "./components/Footer";
 
-// import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Services from './components/pages/Services';
-// import Products from './components/pages/Products';
-// import SignUp from './components/pages/SignUp';
+import About from './components/pages/About';
+import ChromeExtension from './components/pages/ChromeExtension';
+import FAQ from './components/pages/FAQ';
+import SignUp from './components/pages/SignUp';
 
 function App() {
   return (
@@ -21,13 +21,10 @@ function App() {
         <Hero></Hero>
         <LandingContent></LandingContent>
         <Routes>
-          <Route path="/" exact />
-        </Routes>
-        <Routes>
-          {/* <Route path='/' exact component={About} />
+          <Route path='/about' component={About} />
           <Route path='/chrome' component={ChromeExtension} />
           <Route path='/FAQ' component={FAQ} />
-          <Route path='/sign-up' component={SignUp} /> */}
+          <Route path='/sign-up' component={SignUp} />
         </Routes>
         <Footer />
       </Router>
