@@ -25,10 +25,9 @@ chrome.contextMenus.onClicked.addListener(
     alertThis
 );
 
-chrome.action.onClicked.addListener((tab) =>{
-    print("hrelphrlhprh")
+chrome.action.onClicked.addListener((tab) => {
     chrome.scripting.executeScript({
-        target: {tabId:tab.id},
+        target: { tabId: tab.id },
         files: ['scripts/action.js']
     })
 })

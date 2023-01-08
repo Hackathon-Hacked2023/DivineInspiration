@@ -10,9 +10,34 @@ console.log("loading context menu receiver")
 
 
 let tones = {
-    happy: "Happy 🙂",
-    sad: "sad 😦",
-    sandich: "sandich🥪"
+    curiosity: "curiosity 🤔",
+    joy: "Happy 🙂",
+    love: "love 😍",
+    admiration: "admiration 🏆",
+    approval: "approval 👍",
+    caring: "caring 💝",
+    exitement: "exitement 😃",
+    amusement: "amusement 😄",
+    gratitude: "gratitude ❓",
+    desire: "desire ❓",
+    anger: "anger 😠",
+    optimism: "optimism ❓",
+    disapproval: "disapproval 👎",
+    grief: "grief 😢",
+    annoyance: "annoyance 😩",
+    pride: "pride 😏",
+    disgust: "disgust 🤮",
+    disappointment: "disappointment 😬",
+    realization: "realization ?",
+    fear: "fear 😨",
+    relief: "relief ?",
+    confusion: "confusion 🤔",
+    remorse: "remose ?",
+    embarrassment: "embarrassment 😳",
+    surprise: "surprise 😮",
+    sadness: "sadness 😭",
+    nervousness: "nervousness 😖",
+    neutral:"neutral 😑"
 }
 
 
@@ -29,25 +54,34 @@ const insertMsgBoxAtPos = (doc, x, y, top, message, tone) => {
     let box = doc.createElement("div");
     box.id = "ToneMessageBox";
     box.style.cssText = `
-        width: 15%;
+        width: 20%;
         background: #FDF9F0;
-        border-radius: 20px;
+        border-radius: 10px;
         border: 2px solid #E9C46A;
-        padding: 20 px;
         position: absolute;
         left: ${x + "px"};
         top: ${(y + top) + "px"};
+        z-index: 999;
     `; // style the root div here
 
+    t = tones[tone];
+    if (t == undefined) {
+        print("undefined!", tone);
+    }
     // do rest of the styling in inner html
     box.innerHTML = `
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         #ToneMessageBox > p {
-            color: blue;
+            font-family: 'Roboto', sans-serif;
+            margin: 10px 10px 10px 10px;
+            font-size: 15px;
         }
     </style>
     <p>${message}</p>
-    <p>The overall tone is: ${tones[tone]}</p>
+    <p>The overall tone is: ${t}</p>
     `;
 
     box.addEventListener("mouseenter", () => { hovering = true; });
@@ -82,26 +116,25 @@ document.addEventListener("scroll", () => {
     }
 });
 
-
-
 chrome.runtime.onMessage.addListener((msg, sender, responder) => {
 
     if (msg.startsWith("alert")) {
-        fetch("http://127.0.0.1:8080/tonetelling", {
-            method:"POST",
-            headers: {"Content-Type": 'application/json'},
+        fetch("https://tone-teller-ezen7qibyq-nn.a.run.app/tonetelling", {
+            method: "POST",
+            headers: { "Content-Type": 'application/json' },
             mode: 'cors',
             body: JSON.stringify(
                 {
                     "input": msg.slice(5, msg.length)
                 }
             )
-        }).then((res)=>{
-           return res.json();
-        }).then((data)=>{
-            print(data)
+        }).then((res) => {
+            return res.json();
+        }).then((data) => {
+            data = data[0];
+            insertMsgBoxAtPos(document, mouseX, mouseY, topPos, msg.slice(5, msg.length), data[0]['label']);
         })
-        insertMsgBoxAtPos(document, mouseX, mouseY, topPos, msg.slice(5, msg.length), "happy");
+
     }
 });
 
