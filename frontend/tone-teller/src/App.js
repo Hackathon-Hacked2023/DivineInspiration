@@ -1,16 +1,19 @@
 import React from 'react';
 // import the landing page from the components folder
-import Landing from './components/landing';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavHeader from './components/NavHeader';
 
 function App() {
   // routing to landing page
   return (
+    <>
     <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-      </Routes>
+      <NavHeader/>
+        <Routes>
+          <Route path='/' exact />
+        </Routes>
     </Router>
+  </>
   );
 }
 
