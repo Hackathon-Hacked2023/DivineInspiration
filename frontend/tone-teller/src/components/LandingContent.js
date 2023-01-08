@@ -137,16 +137,8 @@ export default function Hero() {
         <p className="overline-text p-60">YOU MIGHT BE WONDERING...</p>
         <p className="heading-5 p-60">How exactly does Toneteller work?</p>
         <p className="body-text p-60">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-          egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-          Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-          lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-          elementum tellus.
+          ToneTeller is supported on mobile and desktop devices. It uses the emotional analysis model EmoRoBERTa trained with the GoEmotions dataset to analyze texts
+          and labels with percentage match to 28 emotion labels. 
         </p>
 
         <div className="what-is-toneteller-grid">
@@ -159,8 +151,7 @@ export default function Hero() {
                 Find a written communication to analyze
               </p>
               <p className="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                All you need to start using ToneTeller is a text that you wish to decifer!
               </p>
             </div>
           </div>
@@ -174,8 +165,8 @@ export default function Hero() {
                 Use the Toneteller web application or Google Chrome extension
               </p>
               <p className="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Enter your text directly into our web page or download the Chrome extension 
+                for a more convinient, automated experience.
               </p>
             </div>
           </div>
@@ -187,8 +178,7 @@ export default function Hero() {
             <div className="what-is-toneteller-text">
               <p className="heading-6">And that's it!</p>
               <p className="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                We hope you find your analysis helpful!
               </p>
             </div>
           </div>
@@ -229,25 +219,17 @@ export default function Hero() {
                 <img src="/images/developer4.png"></img>
               </div>
               <p className="heading-4">YUI</p>
-              <p className="heading-6">Role role</p>
+              <p className="heading-6">Frontend developer</p>
             </div>
           </div>
 
-          <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-violet">
-                <img src="/images/developer5.png"></img>
-              </div>
-              <p className="heading-4">ANIKET</p>
-              <p className="heading-6">Full Stack developer</p>
-            </div>
-            
           <div className="meet-the-team-row">
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-pink">
                 <img src="/images/developer3.png"></img>
               </div>
               <p className="heading-4">TRINITY</p>
-              <p className="heading-6">Role role</p>
+              <p className="heading-6">Frontend developer</p>
             </div>
 
             <div className="meet-the-team-column">
@@ -255,11 +237,19 @@ export default function Hero() {
                 <img src="/images/developer1.png"></img>
               </div>
               <p className="heading-4">JULIA</p>
-              <p className="heading-6">Role role</p>
+              <p className="heading-6">Backend developer</p>
             </div>
           </div>
 
           <div className="meet-the-team-row">
+            <div className="meet-the-team-column">
+              <div className="meet-the-team-img background-violet">
+                <img src="/images/developer5.png"></img>
+              </div>
+              <p className="heading-4">ANIKET</p>
+              <p className="heading-6">Full Stack developer</p>
+            </div>
+
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-sky">
                 <img src="/images/developer2.png"></img>
@@ -267,7 +257,6 @@ export default function Hero() {
               <p className="heading-4">CHRIS</p>
               <p className="heading-6">Designer</p>
             </div>
-
           </div>
         </div>
       </div>
