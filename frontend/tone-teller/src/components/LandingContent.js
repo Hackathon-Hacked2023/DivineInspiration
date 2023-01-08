@@ -21,34 +21,50 @@ export default function Hero() {
 
         <div className="what-is-toneteller-grid">
           <div className="what-is-toneteller-column">
-            <div className="what-is-toneteller-img background-pink"></div>
-            <p className="heading-6">Refine your social skills</p>
-            <p className="body-text">
-              Our application uses state-of-the-art artificial intelligence to
-              analyze text and accurately detect the tone of a message,
-              including, happy, sad, angry, and more. With Toneteller, you will
-              never have to guess at someone’s tone again.
-            </p>
+ 
+            <div className="what-is-toneteller-img background-pink">
+              <img src="/images/what_is_toneteller_1.png"></img>
+            </div>
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">Refine your social skills</p>
+              <p className="body-text">
+                Our application uses state-of-the-art artificial intelligence to
+                analyze text and accurately detect the tone of a message,
+                including, happy, sad, angry, and more. With Toneteller, you
+                will never have to guess at someone’s tone again.
+              </p>
+            </div>
           </div>
 
           <div className="what-is-toneteller-column">
-            <div className="what-is-toneteller-img background-teal"></div>
-            <p className="heading-6">Pick up on the vibes</p>
-            <p className="body-text">
-              Are they serious, or are they only joking? Always be able to
-              accurately interpret the tone of communication with Toneteller.
-            </p>
+            <div className="what-is-toneteller-img background-teal">
+              <img src="/images/what_is_toneteller_2.png"></img>
+            </div>
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">Pick up on the vibes</p>
+              <p className="body-text">
+                Are they serious, or are they only joking? Always be able to
+                accurately interpret the tone of communication with Toneteller.
+              </p>
+            </div>
           </div>
 
           <div className="what-is-toneteller-column">
-            <div className="what-is-toneteller-img background-fuchsia"></div>
-            <p className="heading-6">Strengthen confidence in communicating</p>
-            <p className="body-text">
-              Gain the skills to understand the emotional context of any
-              conversation. With Toneteller, you'll have the ability to read
-              between the lines and understand the true emotion behind their
-              words.
-            </p>
+            <div className="what-is-toneteller-img background-fuchsia">
+              <img src="/images/what_is_toneteller_3.png"></img>
+            </div>
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">
+                Strengthen confidence in communicating
+              </p>
+              <p className="body-text">
+                Gain the skills to understand the emotional context of any
+                conversation. With Toneteller, you'll have the ability to read
+                between the lines and understand the true emotion behind their
+                words.
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -67,40 +83,56 @@ export default function Hero() {
 
         <div className="what-is-toneteller-grid">
           <div className="what-is-toneteller-column">
-            <div className="what-is-toneteller-img background-sky"></div>
-            <p className="heading-6">
-              Created for individuals who struggle with social interaction
-            </p>
-            <p className="body-text">
-              When it comes to communication, not everyone is on the same
-              playing field. can help users better understand the intentions and
-              emotions of others, which can be especially important in avoiding
-              misunderstandings or conflicts.
-            </p>
+
+            <div className="what-is-toneteller-img background-sky">
+              <img src="/images/who_can_use_toneteller_1.png"></img>
+            </div>
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">
+                Created for individuals who struggle with social interaction
+              </p>
+              <p className="body-text">
+                When it comes to communication, not everyone is on the same
+                playing field. can help users better understand the intentions
+                and emotions of others, which can be especially important in
+                avoiding misunderstandings or conflicts.
+              </p>
+            </div>
           </div>
 
           <div className="what-is-toneteller-column">
-            <div className="what-is-toneteller-img background-purple"></div>
-            <p className="heading-6">Designed for professionals and students</p>
-            <p className="body-text">
-              Knowing the tone of a written communication from a client or
-              colleague can help you respond appropriately and avoid
-              misunderstandings. Toneteller can also help students better
-              understand the tone of written texts they are reading for class,
-              which could improve their comprehension and analysis of the
-              material.
-            </p>
+            <div className="what-is-toneteller-img background-purple">
+              <img src="/images/who_can_use_toneteller_2.png"></img>
+            </div>
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">
+                Designed for professionals and students
+              </p>
+              <p className="body-text">
+                Knowing the tone of a written communication from a client or
+                colleague can help you respond appropriately and avoid
+                misunderstandings. Toneteller can also help students better
+                understand the tone of written texts they are reading for class,
+                which could improve their comprehension and analysis of the
+                material.
+              </p>
+            </div>
           </div>
 
           <div className="what-is-toneteller-column">
-            <div className="what-is-toneteller-img background-rose"></div>
-            <p className="heading-6">Built for readers and writers</p>
-            <p className="body-text">
-              Knowing the tone of a piece of writing can help writers craft more
-              effective and engaging content. Toneteller helps writers identify
-              the tone of their writing and was designed to be particularly
-              useful for those who are just starting out.
-            </p>
+            <div className="what-is-toneteller-img background-rose">
+              <img src="/images/who_can_use_toneteller_3.png"></img>
+            </div>
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">Built for readers and writers</p>
+              <p className="body-text">
+                Knowing the tone of a piece of writing can help writers craft
+                more effective and engaging content. Toneteller helps writers
+                identify the tone of their writing and was designed to be
+                particularly useful for those who are just starting out.
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -125,13 +157,17 @@ export default function Hero() {
         <p className="overline-text p-60">YOU MIGHT BE WONDERING...</p>
         <p className="heading-5 p-60">How exactly does Toneteller work?</p>
         <p className="body-text p-60">
-        Toneteller uses machine learning to perform sentiment analysis on text inputted by the user. 
-        The machine learning model is hosted on a Flask server that is deployed on Google Cloud. When a user submits text through the web or chrome extension client, 
-        the server processes the text through the machine learning model and returns the predicted tones to the client. The client then determines how to display the results on the screen.
+
+          Toneteller uses machine learning to perform sentiment analysis on text
+          inputted by the user. The machine learning model is hosted on a Flask
+          server that is deployed on Google Cloud. When a user submits text
+          through the web or chrome extension client, the server processes the
+          text through the machine learning model and returns the predicted
+          tones to the client. The client then determines how to display the
+          results on the screen.
 
         </p>
-      
-      
+
         <div className="what-is-toneteller-grid">
 
           <div className="what-is-toneteller-column column-50">
@@ -160,7 +196,8 @@ export default function Hero() {
                 Use the Toneteller web application or Google Chrome extension
               </p>
               <p className="body-text">
-                  Right click and select "Toneteller" in the context menu, or paste into Toneteller's webpage!
+                Right click and select "Toneteller" in the context menu, or
+                paste into Toneteller's webpage!
               </p>
             </div>
 

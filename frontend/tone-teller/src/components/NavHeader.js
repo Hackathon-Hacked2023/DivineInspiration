@@ -26,7 +26,75 @@ function NavHeader() {
 
   return (
     <>
-      <nav className="navheader">
+      <nav className="navigation-div">
+        <div
+          className={
+            click
+              ? "navigation-content background-yellow"
+              : "navigation-content"
+          }
+        >
+          <div className="navigation-img">
+            <img src="/images/toneteller_logo_48.png"></img>
+          </div>
+          <div className="navigation-right-column">
+            <div className="navigation-links"></div>
+            <div
+              onClick={handleClick}
+              className={click ? "navigation-close" : "navigation-menu"}
+            ></div>
+          </div>
+        </div>
+        <div className={click ? "navigation-mobile" : "display-none"}>
+          <div className="navigation-mobile-links">
+            <Link to="/" className="heading-4" onClick={closeMobileMenu}>
+              Home
+            </Link>
+
+            <a
+              className="heading-4"
+              target="_blank"
+              href="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+            >
+              Download
+            </a>
+
+            <a
+              className="heading-4"
+              target="_blank"
+              href="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+            >
+              Devpost
+            </a>
+
+            <a
+              className="heading-4"
+              target="_blank"
+              href="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+            >
+              Github
+            </a>
+
+            <Link
+              to="/toneteller"
+              className="heading-4"
+              onClick={closeMobileMenu}
+            >
+              Try Toneteller!
+            </Link>
+          </div>
+
+          <div className="navigation-mobile-information">
+            <div className="body-text">
+              Hacked with ❤️ by Christina, Aniket, Ray, Julia, Trinity, and Yui
+            </div>
+
+            <div className="caption-text">HackED © 2023</div>
+          </div>
+        </div>
+      </nav>
+
+      {/* <nav className="navheader">
         <div className="navheader-container">
           <Link to="/" className="navheader-logo" onClick={closeMobileMenu}>
             Toneteller
@@ -37,7 +105,13 @@ function NavHeader() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <a className="nav-links" target="_blank" href="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1">Chrome Extension</a>
+              <a
+                className="nav-links"
+                target="_blank"
+                href="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+              >
+                Chrome Extension
+              </a>
             </li>
 
             <li>
@@ -46,13 +120,17 @@ function NavHeader() {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Try Tone Teller!
+                Try Toneteller!
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">Try Tone Teller</Button>}
+          {button && (
+            <button className="primary-button body-title">
+              Try Toneteller today
+            </button>
+          )}
         </div>
-      </nav>
+      </nav> */}
     </>
   );
 }
