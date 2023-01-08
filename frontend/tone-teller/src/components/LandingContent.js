@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="what-is-toneteller-column">
  
             <div className="what-is-toneteller-img background-pink">
-              <img src="/images/what_is_toneteller_1.png"></img>
+              <img src="./images/what_is_toneteller_1.png"></img>
             </div>
             <div className="what-is-toneteller-text">
               <p className="heading-6">Refine your social skills</p>
@@ -38,7 +38,7 @@ export default function Hero() {
 
           <div className="what-is-toneteller-column">
             <div className="what-is-toneteller-img background-teal">
-              <img src="/images/what_is_toneteller_2.png"></img>
+              <img src="./images/what_is_toneteller_2.png"></img>
             </div>
             <div className="what-is-toneteller-text">
               <p className="heading-6">Pick up on the vibes</p>
@@ -51,7 +51,7 @@ export default function Hero() {
 
           <div className="what-is-toneteller-column">
             <div className="what-is-toneteller-img background-fuchsia">
-              <img src="/images/what_is_toneteller_3.png"></img>
+              <img src="./images/what_is_toneteller_3.png"></img>
             </div>
             <div className="what-is-toneteller-text">
               <p className="heading-6">
@@ -85,7 +85,7 @@ export default function Hero() {
           <div className="what-is-toneteller-column">
 
             <div className="what-is-toneteller-img background-sky">
-              <img src="/images/who_can_use_toneteller_1.png"></img>
+              <img src="./images/who_can_use_toneteller_1.png"></img>
             </div>
             <div className="what-is-toneteller-text">
               <p className="heading-6">
@@ -102,7 +102,7 @@ export default function Hero() {
 
           <div className="what-is-toneteller-column">
             <div className="what-is-toneteller-img background-purple">
-              <img src="/images/who_can_use_toneteller_2.png"></img>
+              <img src="./images/who_can_use_toneteller_2.png"></img>
             </div>
             <div className="what-is-toneteller-text">
               <p className="heading-6">
@@ -121,7 +121,7 @@ export default function Hero() {
 
           <div className="what-is-toneteller-column">
             <div className="what-is-toneteller-img background-rose">
-              <img src="/images/who_can_use_toneteller_3.png"></img>
+              <img src="./images/who_can_use_toneteller_3.png"></img>
             </div>
             <div className="what-is-toneteller-text">
               <p className="heading-6">Built for readers and writers</p>
@@ -137,7 +137,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <img className="banner" src="/images/banner.png"></img>
+      <img className="banner" src="./images/banner.png"></img>
 
       <div className="cta">
         <p className="overline-text">AVAILABLE NOW</p>
@@ -151,7 +151,7 @@ export default function Hero() {
         </Link>
       </div>
 
-      <img className="banner" src="/images/banner.png"></img>
+      <img className="banner" src="./images/banner.png"></img>
 
       <div className="how-does-it-work-div">
         <p className="overline-text p-60">YOU MIGHT BE WONDERING...</p>
@@ -172,7 +172,7 @@ export default function Hero() {
 
           <div className="what-is-toneteller-column column-50">
             <div className="how-does-it-work-img">
-              <img src="/images/step_one.png"></img>
+              <img src="./images/step_one.png"></img>
             </div>
             <div className="what-is-toneteller-text">
               <p className="heading-6">
@@ -188,7 +188,7 @@ export default function Hero() {
 
           <div className="what-is-toneteller-column">
             <div className="how-does-it-work-img">
-              <img src="/images/step_two.png"></img>
+              <img src="./images/step_two.png"></img>
             </div>
 
             <div className="what-is-toneteller-text">
@@ -205,7 +205,7 @@ export default function Hero() {
 
           <div className="what-is-toneteller-column">
             <div className="how-does-it-work-img">
-              <img src="/images/step_three.png"></img>
+              <img src="./images/step_three.png"></img>
             </div>
 
             <div className="what-is-toneteller-text">
@@ -256,7 +256,7 @@ export default function Hero() {
           <div className="meet-the-team-row">
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-purple">
-                <img src="/images/ray.png"></img>
+                <img src="./images/ray.png"></img>
               </div>
               <p className="heading-4">RAY</p>
               <p className="heading-6">Backend developer</p>
@@ -264,7 +264,7 @@ export default function Hero() {
 
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-teal">
-                <img src="/images/developer4.png"></img>
+                <img src="./images/developer4.png"></img>
               </div>
               <p className="heading-4">YUI</p>
               <p className="heading-6">Frontend developer</p>
@@ -274,7 +274,7 @@ export default function Hero() {
           <div className="meet-the-team-row">
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-pink">
-                <img src="/images/developer3.png"></img>
+                <img src="./images/developer3.png"></img>
               </div>
               <p className="heading-4">TRINITY</p>
               <p className="heading-6">Frontend developer</p>
@@ -282,7 +282,7 @@ export default function Hero() {
 
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-rose">
-                <img src="/images/developer1.png"></img>
+                <img src="./images/developer1.png"></img>
               </div>
               <p className="heading-4">JULIA</p>
               <p className="heading-6">Backend developer</p>
@@ -292,7 +292,7 @@ export default function Hero() {
           <div className="meet-the-team-row">
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-violet">
-                <img src="/images/developer5.png"></img>
+                <img src="./images/developer5.png"></img>
               </div>
               <p className="heading-4">ANIKET</p>
               <p className="heading-6">Full Stack developer</p>
@@ -300,7 +300,7 @@ export default function Hero() {
 
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-sky">
-                <img src="/images/developer2.png"></img>
+                <img src="./images/developer2.png"></img>
               </div>
               <p className="heading-4">CHRIS</p>
               <p className="heading-6">Designer</p>

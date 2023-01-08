@@ -36,7 +36,7 @@ function NavHeader() {
         >
           <div className="navigation-img">
           <Link to="/">
-          <img src="/images/toneteller_logo_48.png"></img>
+          <img src="./images/toneteller_logo_48.png"></img>
           </Link>
           </div>
           <div className="navigation-right-column">

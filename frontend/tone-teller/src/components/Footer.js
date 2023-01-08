@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer-div">
       <div className="footer-img">
-        <img src="/images/toneteller-logo-and-text.png"></img>
+        <img src="./images/toneteller-logo-and-text.png"></img>
       </div>
 
       <div className="heading-6">A sentiment analysis tool</div>
