@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/DivineInspiration/static/css/main.dcb97f4a.css",
-    "main.js": "/DivineInspiration/static/js/main.b021e7ef.js",
+    "main.js": "/DivineInspiration/static/js/main.e41c43d9.js",
     "static/media/Abyss.otf": "/DivineInspiration/static/media/Abyss.260a555118f594b3aebd.otf",
     "static/media/loop.svg": "/DivineInspiration/static/media/loop.e5e8242367c734c9d247.svg",
     "static/media/menu_icon.svg": "/DivineInspiration/static/media/menu_icon.3c500cea94b38f2383c5.svg",
     "static/media/close_icon.svg": "/DivineInspiration/static/media/close_icon.61b0dd2496196fc14684.svg",
     "index.html": "/DivineInspiration/index.html",
     "main.dcb97f4a.css.map": "/DivineInspiration/static/css/main.dcb97f4a.css.map",
-    "main.b021e7ef.js.map": "/DivineInspiration/static/js/main.b021e7ef.js.map"
+    "main.e41c43d9.js.map": "/DivineInspiration/static/js/main.e41c43d9.js.map"
   },
   "entrypoints": [
     "static/css/main.dcb97f4a.css",
-    "static/js/main.b021e7ef.js"
+    "static/js/main.e41c43d9.js"
   ]
 }
