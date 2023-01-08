@@ -21,7 +21,7 @@ export default function Hero() {
 
         <div className="what-is-toneteller-grid">
           <div className="what-is-toneteller-column">
- 
+
             <div className="what-is-toneteller-img background-pink">
               <img src="/images/what_is_toneteller_1.png"></img>
             </div>
@@ -144,7 +144,7 @@ export default function Hero() {
         <p className="heading-2">
           Say goodbye to guessing and hello to clarity WITH TONETELLER.
         </p>
-        <Link to="/toneteller">
+        <Link to="/DivineInspiration/toneteller">
           <button className="primary-button heading-5 px-80">
             Try Toneteller today
           </button>
@@ -253,60 +253,60 @@ export default function Hero() {
       </div>
 
       <div className="meet-the-team-grid">
-          <div className="meet-the-team-row">
-            <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-purple">
-                <img src="/images/ray.png"></img>
-              </div>
-              <p className="heading-4">RAY</p>
-              <p className="heading-6">Backend developer</p>
+        <div className="meet-the-team-row">
+          <div className="meet-the-team-column">
+            <div className="meet-the-team-img background-purple">
+              <img src="/images/ray.png"></img>
             </div>
-
-            <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-teal">
-                <img src="/images/developer4.png"></img>
-              </div>
-              <p className="heading-4">YUI</p>
-              <p className="heading-6">Frontend developer</p>
-            </div>
+            <p className="heading-4">RAY</p>
+            <p className="heading-6">Backend developer</p>
           </div>
 
-          <div className="meet-the-team-row">
-            <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-pink">
-                <img src="/images/developer3.png"></img>
-              </div>
-              <p className="heading-4">TRINITY</p>
-              <p className="heading-6">Frontend developer</p>
+          <div className="meet-the-team-column">
+            <div className="meet-the-team-img background-teal">
+              <img src="/images/developer4.png"></img>
             </div>
-
-            <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-rose">
-                <img src="/images/developer1.png"></img>
-              </div>
-              <p className="heading-4">JULIA</p>
-              <p className="heading-6">Backend developer</p>
-            </div>
-          </div>
-
-          <div className="meet-the-team-row">
-            <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-violet">
-                <img src="/images/developer5.png"></img>
-              </div>
-              <p className="heading-4">ANIKET</p>
-              <p className="heading-6">Full Stack developer</p>
-            </div>
-
-            <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-sky">
-                <img src="/images/developer2.png"></img>
-              </div>
-              <p className="heading-4">CHRIS</p>
-              <p className="heading-6">Designer</p>
-            </div>
+            <p className="heading-4">YUI</p>
+            <p className="heading-6">Frontend developer</p>
           </div>
         </div>
+
+        <div className="meet-the-team-row">
+          <div className="meet-the-team-column">
+            <div className="meet-the-team-img background-pink">
+              <img src="/images/developer3.png"></img>
+            </div>
+            <p className="heading-4">TRINITY</p>
+            <p className="heading-6">Frontend developer</p>
+          </div>
+
+          <div className="meet-the-team-column">
+            <div className="meet-the-team-img background-rose">
+              <img src="/images/developer1.png"></img>
+            </div>
+            <p className="heading-4">JULIA</p>
+            <p className="heading-6">Backend developer</p>
+          </div>
+        </div>
+
+        <div className="meet-the-team-row">
+          <div className="meet-the-team-column">
+            <div className="meet-the-team-img background-violet">
+              <img src="/images/developer5.png"></img>
+            </div>
+            <p className="heading-4">ANIKET</p>
+            <p className="heading-6">Full Stack developer</p>
+          </div>
+
+          <div className="meet-the-team-column">
+            <div className="meet-the-team-img background-sky">
+              <img src="/images/developer2.png"></img>
+            </div>
+            <p className="heading-4">CHRIS</p>
+            <p className="heading-6">Designer</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

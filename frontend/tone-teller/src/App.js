@@ -16,9 +16,8 @@ function App() {
         {/* <Hero></Hero>
         <LandingContent></LandingContent> */}
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/DivineInspiration/" element={<Home />} />
-          <Route path="/toneteller" element={<Toneteller />} />
+          <Route path="/DivineInspiration/toneteller" element={<Toneteller />} />
         </Routes>
         {/* <Footer /> */}
       </Router>

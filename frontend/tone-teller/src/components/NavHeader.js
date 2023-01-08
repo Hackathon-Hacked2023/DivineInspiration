@@ -47,7 +47,7 @@ function NavHeader() {
         </div>
         <div className={click ? "navigation-mobile" : "display-none"}>
           <div className="navigation-mobile-links">
-            <Link to="/" className="heading-4" onClick={closeMobileMenu}>
+            <Link to="/DivineInspiration" className="heading-4" onClick={closeMobileMenu}>
               Home
             </Link>
 
@@ -76,7 +76,7 @@ function NavHeader() {
             </a>
 
             <Link
-              to="/toneteller"
+              to="/DivineInspiration/toneteller"
               className="heading-4"
               onClick={closeMobileMenu}
             >
