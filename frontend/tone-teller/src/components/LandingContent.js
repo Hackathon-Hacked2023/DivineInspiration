@@ -140,19 +140,14 @@ export default function Hero() {
         <p className="overline-text p-60">YOU MIGHT BE WONDERING...</p>
         <p className="heading-5 p-60">How exactly does Toneteller work?</p>
         <p className="body-text p-60">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-          egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-          Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-          lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-          elementum tellus.
+        Toneteller uses machine learning to perform sentiment analysis on text inputted by the user. 
+        The machine learning model is hosted on a Flask server that is deployed on Google Cloud. When a user submits text through the web or chrome extension client, 
+        the server processes the text through the machine learning model and returns the predicted tones to the client. The client then determines how to display the results on the screen.
         </p>
-
+      
+      
         <div className="what-is-toneteller-grid">
+       
           <div className="what-is-toneteller-column column-50">
             <div className="how-does-it-work-img">
               <img src="/images/step_one.png"></img>
@@ -162,8 +157,7 @@ export default function Hero() {
                 Find a written communication to analyze
               </p>
               <p className="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Copy or select any phrase that you are not sure the tone of!
               </p>
             </div>
           </div>
@@ -177,8 +171,7 @@ export default function Hero() {
                 Use the Toneteller web application or Google Chrome extension
               </p>
               <p className="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Right click and select "Toneteller" in the context menu, or paste into Toneteller's webpage!
               </p>
             </div>
           </div>
@@ -190,8 +183,7 @@ export default function Hero() {
             <div className="what-is-toneteller-text">
               <p className="heading-6">And that's it!</p>
               <p className="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Toneteller will ten show you the predicted tone!
               </p>
             </div>
           </div>

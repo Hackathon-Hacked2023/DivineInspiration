@@ -18,9 +18,10 @@ export default function Hero() {
           you want to communicate with greater empathy and understanding?
         </p>
 
-        <button className="heading-6 primary-button">
+        <Link to="/toneteller">   <button className="heading-6 primary-button">
           Try Toneteller today
-        </button>
+        </button></Link>
+
       </div>
     </div>
   );
