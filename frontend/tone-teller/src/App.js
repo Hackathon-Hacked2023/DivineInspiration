@@ -6,23 +6,22 @@ import NavHeader from "./components/NavHeader";
 import Toneteller from "./components/Toneteller";
 import Home from "./components/Home";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Router>
+    <React.StrictMode>
+      <HashRouter>
         <NavHeader />
         {/* <Hero></Hero>
         <LandingContent></LandingContent> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/DivineInspiration" element={<Home />} />
           <Route path="/toneteller" element={<Toneteller />} />
         </Routes>
         {/* <Footer /> */}
-      </Router>
-    </>
+      </HashRouter>
+    </React.StrictMode>
   );
 }
 
