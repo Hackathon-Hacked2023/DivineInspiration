@@ -9,15 +9,6 @@ PADDING
     text-align: center;
 }
 
-.px-40 {
-    padding-left:40px;
-    padding-right:40px;
-}
-
-.pb-80 {
-    padding-bottom: 80px;
-}
-
 /*
 WHAT IS TONETELLER?
 */
@@ -200,6 +191,15 @@ MEET THE TEAM
     
     .meet-the-team-div > div {
         width: 50%;
+    }
+
+    .px-40 {
+        padding-left:40px;
+        padding-right:40px;
+    }
+
+    .pb-80 {
+        padding-bottom: 80px;
     }
 }
 
