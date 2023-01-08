@@ -1,19 +1,27 @@
 import React from 'react';
-// import the landing page from the components folder
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavHeader from './components/NavHeader';
+import Footer from './components/Footer';
+import './App.css';
+// import Home from './components/pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Services from './components/pages/Services';
+// import Products from './components/pages/Products';
+// import SignUp from './components/pages/SignUp';
 
 function App() {
-  // routing to landing page
   return (
     <>
-    <Router>
-      <NavHeader/>
+      <Router>
+        <NavHeader/>
         <Routes>
-          <Route path='/' exact />
+          {/* <Route path='/' exact component={About} />
+          <Route path='/chrome' component={ChromeExtension} />
+          <Route path='/FAQ' component={FAQ} />
+          <Route path='/sign-up' component={SignUp} /> */}
         </Routes>
-    </Router>
-  </>
+        <Footer/>
+      </Router>
+    </>
   );
 }
 
