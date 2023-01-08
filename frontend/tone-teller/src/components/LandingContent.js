@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./style/LandingContent.css";
 
 const colors = {};
@@ -126,9 +127,12 @@ export default function Hero() {
         <p className="heading-2">
           Say goodbye to guessing and hello to clarity WITH TONETELLER.
         </p>
-        <button className="primary-button heading-5">
-          Try Toneteller today
-        </button>
+        <Link to="/toneteller">
+
+          <button className="primary-button heading-5">
+            Try Toneteller today
+          </button>
+        </Link>
       </div>
 
       <img className="banner" src="/images/banner.png"></img>
@@ -200,12 +204,18 @@ export default function Hero() {
         <p className="heading-2 px-40">
           DOWNLOAD OUR EXTENSION FOR GOOGLE CHROME
         </p>
-        <button className="primary-button heading-5">Download</button>
+        <form action="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1" target="_blank">
+          <input className="primary-button heading-5" type="submit" value="Download" />
+        </form>
+
       </div>
       <div className="cta learn-more-div">
         <p className="overline-text">LEARN MORE ABOUT</p>
         <p className="heading-2">THE LORE BEHIND TONETELLER</p>
-        <button className="primary-button heading-5">Read our story</button>
+        <form action="https://devpost.com/software/512332/joins/S2XZ4vcd7goRNHkjHkKCMQ" target="_blank">
+          <input className="primary-button heading-5" type="submit" value="Read our story" />
+        </form>
+
       </div>
 
       <div className="meet-the-team-div">
