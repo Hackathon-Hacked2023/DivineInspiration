@@ -1,0 +1,95 @@
+h1{
+  color: #00008B;
+  text-align: left;
+  font-size: 40px;
+  font-family: 'Cabin';
+}
+
+h2{
+    color: #00008B;
+    font-family: 'Cabin';
+}
+
+body{
+      background-color: white;
+}
+
+a{
+  font-family: 'Cabin';
+}
+
+ul{
+  text-align: left;
+  font-size: 17px;
+  padding-left: 185px;
+  padding-right: 120px;
+}
+
+p{
+  line-height: 1.6;  
+  margin: 5px;
+  text-align: left;
+  font-family: 'Cabin';
+  font-size: 18px;
+}
+
+span{
+      color: #00008B;
+      font-weight: bold;
+    }
+
+.box{
+  border-radius: 25px;
+  text-align: left;
+  left: 30%;
+  background-color: white;
+        width: 60%;	
+  border-color: #595758;
+  border-width: 1px;
+  border-style: solid;
+  top: 250px;
+  margin: auto;
+}
+
+.invis{
+  background-color: white;
+  color: white;
+}
+
+.picture{
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.button {
+  background-color: #FFFFFF; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.backtotop {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #00008B;
+}
+
+.backtotop:hover {
+  background-color: #00008B;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.2);
+}
+
+.buttonbox{
+  text-align: centre;
+  background-color: white;
+        width: 14%;
+  top: 250px;
+  margin: auto;
+}
