@@ -17,7 +17,7 @@ function App() {
         <LandingContent></LandingContent> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/DivineInspiration" element={<Home />} />
+          <Route path="/DivineInspiration/" element={<Home />} />
           <Route path="/toneteller" element={<Toneteller />} />
         </Routes>
         {/* <Footer /> */}
