@@ -23,10 +23,9 @@ export default function Hero() {
             <div className="what-is-toneteller-text">
               <p className="heading-6">Refine your social skills</p>
               <p className="body-text">
-                Our application uses state-of-the-art artificial intelligence to
-                analyze text and accurately detect the tone of a message,
-                including, happy, sad, angry, and more. With Toneteller, you
-                will never have to guess at someone’s tone again.
+                Our application allows users to gain another perspective on
+                communication. We aim to help users improve communication and understanding
+                in professional and personal contexts.
               </p>
             </div>
           </div>
