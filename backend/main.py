@@ -5,7 +5,7 @@ from flask import Flask, render_template, url_for, flash, redirect, request, jso
 import os
 from transformers import pipeline
 
-
+print(os.getcwd())
 modelPath = "./model"
 emotion = pipeline("sentiment-analysis", model=modelPath, tokenizer=modelPath, top_k = None)
 
