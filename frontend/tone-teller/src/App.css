@@ -1,8 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --green: #2A9D8F;
+    --orange: #f4a261;
+    --red: #e76f51;
+    --blue: #2673ab;
+    --white: #ffffff;
+    --black: #000000;
+    --cyan: #22d3ee;
+    --sky: #38bdf8;
+    --indigo: #818cf8;
+    --violet: #a78bfa;
+    --purple: #c084fc;
+    --fuchsia:#e879f9;
+    --pink: #f472b6;
+    --rose: #fb7185;
+    --teal: #2dd4bf;
+
+    --yellow-900: #f5cc6e;
+    --yellow-800: #f6d17d;
+    --yellow-700: #f7d68b;
+    --yellow-600: #f8db9a;
+    --yellow-500: #f9e0a8;
+    --yellow-400: #fae6b7;
+    --yellow-300: #fbebc5;
+    --yellow-200: #fcf0d4;
+    --yellow-100: #fdf5e2;
+    --yellow-50: #fefaf1;
+}
+
+@font-face {
+    font-family: Abyss;
+    src: url(../public/fonts/Abyss.otf);
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    font-family: 'Cantarell';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.title {
+    font-family: Abyss;
+    font-size: 6rem; /* 96px */
+    line-height: 1;
+}
+
+.heading-1 {
+    font-family: Abyss;
+    font-size: 4.5rem; /* 72px */
+    line-height: 1;
+}
+
+.heading-2 {
+    font-family: Abyss;
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.heading-3 {
+    font-family: Abyss;
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+}
+
+.heading-4 {
+    font-family: Abyss;
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+}
+
+.heading-5 {
+    font-family: 'Cantarell';
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+}
+
+.heading-6 {
+    font-family: 'Cantarell';
+    font-weight: 700;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+    margin-bottom: 10px;
+}
+
+.heading-7 {
+    font-family: 'Cantarell';
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.body-text {
+    font-family: 'Cantarell';
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.body-title {
+    font-family: 'Cantarell';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+.caption-text {
+    font-family: 'Cantarell';
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+
+.overline-text {
+    font-family: 'Cantarell';
+    font-weight: 700;
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.primary-button {
+    padding: 12px 20px;
+    background-color: var(--yellow-900);
+    border: 2px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+    border-radius: 10px;
+}
+
+.background-white {
+    background-color: var(--white);
+}
+
+.background-green {
+    background-color: var(--green);
+}
+
+.background-orange {
+    background-color: var(--orange);
+}
+
+.background-red {
+    background-color: var(--red);
+}
+
+.background-cyan {
+    background-color: var(--cyan);
+}
+
+.background-sky {
+    background-color: var(--sky);
+}
+
+.background-indigo {
+    background-color: var(--indigo);
+}
+
+.background-violet {
+    background-color: var(--violet);
+}
+
+
+.background-rose {
+    background-color: var(--rose);
+}
+
+.background-purple {
+    background-color: var(--purple);
+}
+
+.background-blue {
+    background-color: var(--blue);
+}
+
+.background-teal {
+    background-color: var(--teal);
+}
+
+.background-fuchsia {
+    background-color: var(--fuchsia);
+}
+
+.background-pink {
+    background-color: var(--pink);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Canterella', sans-serif;
   }
   
   .about,

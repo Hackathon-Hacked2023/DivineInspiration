@@ -1,0 +1,133 @@
+/*
+WHAT IS TONETELLER?
+*/
+.what-is-toneteller-div {
+    background-color: var(--yellow-100);
+    padding: 20px;
+}
+
+.what-is-toneteller-grid {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.what-is-toneteller-img {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 120px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 20px;
+}
+
+/*
+WHO CAN USE TONETELLER?
+*/
+.who-can-use-toneteller-div {
+    padding: 20px;
+    background-color: var(--yellow-50);
+}
+
+/*
+BANNER
+*/
+.banner {
+    max-width: 100%;
+    height: 4rem;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
+/*
+CTA
+*/
+.cta {
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: var(--yellow-400);
+}
+
+
+/*
+HOW DOES IT WORK
+*/
+.how-does-it-work-div {
+    padding: 20px;
+}
+
+.how-does-it-work-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 2;
+    margin-bottom: 20px;
+}
+
+.how-does-it-work-img > img {
+    width: 100%;
+    height: auto;
+}
+
+/*
+DOWNLOAD EXTENSION
+*/
+.download-extension-div {
+    background-color: var(--yellow-600);
+}
+
+/*
+LEARN MORE
+*/
+.learn-more-div {
+    background-color: var(--yellow-50);
+}
+
+/*
+MEET THE TEAM
+*/
+.meet-the-team-div {
+    padding: 20px;
+    background-color: var(--yellow-200);
+    padding-bottom: 40px;
+}
+
+.meet-the-team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.meet-the-team-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.meet-the-team-column {
+    padding: 20px;
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+    border-radius: 10px;
+    background-color: var(--white);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.meet-the-team-img {
+    width: calc(100% - 8px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border: 4px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.meet-the-team-img > img {
+    padding: 20px;
+    width: 100%;
+}
