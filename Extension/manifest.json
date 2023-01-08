@@ -4,10 +4,10 @@
     "version": "1",
     "description": "just testing",
     "icons": {
-        "16": "imgs/longbread16.png",
-        "32": "imgs/longbread32.png",
-        "48": "imgs/longbread48.png",
-        "128": "imgs/longbread128.png"
+        "16": "imgs/toneteller_logo_16.png",
+        "32": "imgs/toneteller_logo_32.png",
+        "48": "imgs/toneteller_logo_48.png",
+        "128": "imgs/toneteller_logo_128.png"
     },
     "background": {
         "service_worker": "scripts/background.js"
