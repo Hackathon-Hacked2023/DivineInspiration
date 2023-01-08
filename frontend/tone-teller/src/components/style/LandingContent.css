@@ -129,5 +129,5 @@ MEET THE TEAM
 
 .meet-the-team-img > img {
     padding: 20px;
-    width: calc(100% - 40px);
+    width: 100%;
 }
