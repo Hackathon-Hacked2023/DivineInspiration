@@ -1,6 +1,5 @@
 
 const print = console.log;
-console.log("sadsada")
 
 
 chrome.contextMenus.create(
@@ -25,5 +24,12 @@ const alertThis = (selection, tab) => {
 
 chrome.contextMenus.onClicked.addListener(
     alertThis
-)
+);
 
+chrome.action.onClicked.addListener((tab) =>{
+    print("hrelphrlhprh")
+    chrome.scripting.executeScript({
+        target: {tabId:tab.id},
+        files: ['scripts/action.js']
+    })
+})

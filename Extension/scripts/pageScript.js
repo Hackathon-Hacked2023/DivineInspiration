@@ -1,52 +1,95 @@
 
+let mouseX = 0;
+let mouseY = 0; // global vars for current mouse position
+let topPos = 0;
+let hovering = false;
 
 
 const print = console.log
 console.log("loading context menu receiver")
 
 
+let tones = {
+    happy: "Happy 🙂",
+    sad: "sad 😦",
+    sandich: "sandich🥪"
+}
+
 
 /**
  * 
- * @param {Document} doc 
- * @param {Number} x 
- * @param {Number} y 
+ * @param {Document} doc document node the message box will be inserted to
+ * @param {Number} x mouse x
+ * @param {Number} y mouse y
  */
-const insertMsgBoxAtPos = (doc, x, y) => {
+const insertMsgBoxAtPos = (doc, x, y, top, message, tone) => {
     print("in insert")
+    print(x, y);
 
     let box = doc.createElement("div");
-    box.style.cssText = "background: red";
-    box.innerHTML = "<p>waaaa </p>";
-    box.style.position = "absolute";
-    box.style.left = x + "px";
-    box.style.top = y + "px";
+    box.id = "ToneMessageBox";
+    box.style.cssText = `
+        width: 15%;
+        background: #FDF9F0;
+        border-radius: 20px;
+        border: 2px solid #E9C46A;
+        padding: 20 px;
+        position: absolute;
+        left: ${x + "px"};
+        top: ${(y + top) + "px"};
+    `; // style the root div here
 
-    doc.body.insertBefore(box, doc.body.firstChild);
+    // do rest of the styling in inner html
+    box.innerHTML = `
+    <style>
+        #ToneMessageBox > p {
+            color: blue;
+        }
+    </style>
+    <p>${message}</p>
+    <p>The overall tone is: ${tones[tone]}</p>
+    `;
 
+    box.addEventListener("mouseenter", () => { hovering = true; });
+    box.addEventListener("mouseleave", () => { hovering = false; });
+    doc.body.insertAdjacentElement("afterend", box);
 
 };
 
-
-let mouseX = 0;
-let mouseY = 0; // global vars for current mouse position
-let topPos = 0;
+const removeMsgBoxIfExist = () => {
+    hovering = false;
+    box = document.getElementById("ToneMessageBox");
+    if (box != null) {
+        box.remove();
+    }
+}
 
 document.addEventListener("mousedown", (event) => {
+    if (!hovering) {
+        removeMsgBoxIfExist();
+    }
+
     if (event.button != 2) return;
     mouseX = event.clientX;
     mouseY = event.clientY;
     topPos = document.documentElement.scrollTop;
-    print("right click")
+});
 
-})
+
+document.addEventListener("scroll", () => {
+    if (!hovering) {
+        removeMsgBoxIfExist();
+    }
+});
+
+
 
 chrome.runtime.onMessage.addListener((msg, sender, responder) => {
 
     if (msg.startsWith("alert")) {
-        alert(msg.slice(5, msg.length - 1));
-
-        insertMsgBoxAtPos(document, 0, 0);
-
+        // alert(msg.slice(5, msg.length - 1));
+        insertMsgBoxAtPos(document, mouseX, mouseY, topPos, msg.slice(5, msg.length), "happy");
     }
-})
+});
+
+
