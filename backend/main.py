@@ -17,8 +17,7 @@ def home():
 def submit():
     if request.method == 'POST':
         form_data = request.form
-        return '<h1> hello </h1>'
-        #return render_template('results.html', result = form_data['text'])
+        return render_template('results.html', result = form_data['text'])
 
 
 if __name__ == '__main__':
