@@ -20,12 +20,14 @@ export default function Toneteller() {
           <div className="heading-3">Welcome to Toneteller!</div>
         )}
         {print ? (
-          <div className="caption-text">Analyzing sentiment for prompt:</div>
+          <div className="body-title">Analyzing sentiment for prompt</div>
         ) : (
           <div className="body-text">{null}</div>
         )}
         {print ? (
-          <div className="body-text">{data}</div>
+          <div className="body-text">
+            <i>{data}</i>
+          </div>
         ) : (
           <div className="body-text">
             Tired of trying to decipher the tone of an email or text message? Do

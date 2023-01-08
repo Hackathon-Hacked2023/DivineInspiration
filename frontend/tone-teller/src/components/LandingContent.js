@@ -128,8 +128,7 @@ export default function Hero() {
           Say goodbye to guessing and hello to clarity WITH TONETELLER.
         </p>
         <Link to="/toneteller">
-
-          <button className="primary-button heading-5">
+          <button className="primary-button heading-5 px-80">
             Try Toneteller today
           </button>
         </Link>
@@ -204,18 +203,30 @@ export default function Hero() {
         <p className="heading-2 px-40">
           DOWNLOAD OUR EXTENSION FOR GOOGLE CHROME
         </p>
-        <form action="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1" target="_blank">
-          <input className="primary-button heading-5" type="submit" value="Download" />
+        <form
+          action="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+          target="_blank"
+        >
+          <input
+            className="primary-button heading-5 px-80"
+            type="submit"
+            value="Download"
+          />
         </form>
-
       </div>
       <div className="cta learn-more-div">
         <p className="overline-text">LEARN MORE ABOUT</p>
         <p className="heading-2">THE LORE BEHIND TONETELLER</p>
-        <form action="https://devpost.com/software/512332/joins/S2XZ4vcd7goRNHkjHkKCMQ" target="_blank">
-          <input className="primary-button heading-5" type="submit" value="Read our story" />
+        <form
+          action="https://devpost.com/software/512332/joins/S2XZ4vcd7goRNHkjHkKCMQ"
+          target="_blank"
+        >
+          <input
+            className="primary-button heading-5 px-80"
+            type="submit"
+            value="Read our story"
+          />
         </form>
-
       </div>
 
       <div className="meet-the-team-div">
