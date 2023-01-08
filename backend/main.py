@@ -6,7 +6,7 @@ import os
 from transformers import pipeline
 
 
-modelPath = "./model"
+modelPath = ".\\model"
 emotion = pipeline("sentiment-analysis", model=modelPath, tokenizer=modelPath, top_k = None)
 
 app = Flask(__name__)
