@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="landing-hero">
       <div class="hero-img">
-        <img class="hero-img" src="/images/landing_image.png"></img>
+        <img class="hero-img" src="./images/landing_image.png"></img>
       </div>
 
       <div className="hero-heading-and-text">
