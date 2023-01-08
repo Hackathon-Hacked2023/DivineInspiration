@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import './NavHeader.css';
+import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import "./style/NavHeader.css";
 
 function NavHeader() {
   const [click, setClick] = useState(false);
@@ -22,55 +22,51 @@ function NavHeader() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener("resize", showButton);
 
   return (
     <>
-      <nav className='navheader'>
-        <div className='navheader-container'>
-          <Link to='/' className='navheader-logo' onClick={closeMobileMenu}>
-            Tone Teller
-            <i class='fas fa-sms' />
+      <nav className="navheader">
+        <div className="navheader-container">
+          <Link to="/" className="navheader-logo" onClick={closeMobileMenu}>
+            Toneteller
+            <i class="fas fa-sms" />
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 About
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/chrome'
-                className='nav-links'
+                to="/chrome"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Chrome Extension
               </Link>
             </li>
-            <li className='nav-item'>
-              <Link
-                to='/FAQ'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+            <li className="nav-item">
+              <Link to="/FAQ" className="nav-links" onClick={closeMobileMenu}>
                 FAQ
               </Link>
             </li>
 
             <li>
               <Link
-                to='/sign-up'
-                className='nav-links-mobile'
+                to="/sign-up"
+                className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Sign Up
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
         </div>
       </nav>
     </>
