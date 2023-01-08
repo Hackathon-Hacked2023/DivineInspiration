@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./style/LandingContent.css";
 
 const colors = {};
@@ -111,76 +112,107 @@ export default function Hero() {
         <p className="heading-2">
           Say goodbye to guessing and hello to clarity WITH TONETELLER.
         </p>
-        <button className="primary-button heading-5">
-          Try Toneteller today
-        </button>
+        <Link to="/toneteller">
+          <button className="primary-button heading-5 px-80">
+            Try Toneteller today
+          </button>
+        </Link>
       </div>
 
       <img className="banner" src="/images/banner.png"></img>
 
       <div className="how-does-it-work-div">
-        <p className="overline-text">YOU MIGHT BE WONDERING...</p>
-        <p className="heading-5">How exactly does Toneteller work?</p>
-        <p className="body-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-          egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-          Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-          lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-          elementum tellus.
-        </p>
+        <p className="overline-text p-60">YOU MIGHT BE WONDERING...</p>
+        <p className="heading-5 p-60">How exactly does Toneteller work?</p>
+        <p className="body-text p-60">
+        Toneteller uses machine learning to perform sentiment analysis on text inputted by the user. 
+        The machine learning model is hosted on a Flask server that is deployed on Google Cloud. When a user submits text through the web or chrome extension client, 
+        the server processes the text through the machine learning model and returns the predicted tones to the client. The client then determines how to display the results on the screen.
 
+        </p>
+      
+      
         <div className="what-is-toneteller-grid">
-          <div className="what-is-toneteller-column">
+
+          <div className="what-is-toneteller-column column-50">
             <div className="how-does-it-work-img">
               <img src="/images/step_one.png"></img>
             </div>
-            <p className="heading-6">Find a written communication to analyze</p>
-            <p className="body-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
-            </p>
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">
+                Find a written communication to analyze
+              </p>
+              <p className="body-text">
+                All you need to start using ToneTeller is a text that you wish to decifer!
+
+              </p>
+            </div>
+
           </div>
 
           <div className="what-is-toneteller-column">
             <div className="how-does-it-work-img">
               <img src="/images/step_two.png"></img>
             </div>
-            <p className="heading-6">
-              Use the Toneteller web application or Google Chrome extension
-            </p>
-            <p className="body-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
-            </p>
+
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">
+                Use the Toneteller web application or Google Chrome extension
+              </p>
+              <p className="body-text">
+                  Right click and select "Toneteller" in the context menu, or paste into Toneteller's webpage!
+              </p>
+            </div>
+
           </div>
 
           <div className="what-is-toneteller-column">
             <div className="how-does-it-work-img">
               <img src="/images/step_three.png"></img>
             </div>
-            <p className="heading-6">And that's it!</p>
-            <p className="body-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
-            </p>
+
+            <div className="what-is-toneteller-text">
+              <p className="heading-6">And that's it!</p>
+              <p className="body-text">
+                Toneteller will ten show you the predicted tone!
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
 
       <div className="cta download-extension-div">
         <p className="overline-text">AVAILABLE NOW</p>
-        <p className="heading-2">DOWNLOAD OUR EXTENSION FOR GOOGLE CHROME</p>
-        <button className="primary-button heading-5">Download</button>
+
+        <p className="heading-2 px-40">
+          DOWNLOAD OUR EXTENSION FOR GOOGLE CHROME
+        </p>
+        <form
+          action="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+          target="_blank"
+        >
+          <input
+            className="primary-button heading-5 px-80"
+            type="submit"
+            value="Download"
+          />
+        </form>
+
       </div>
       <div className="cta learn-more-div">
         <p className="overline-text">LEARN MORE ABOUT</p>
         <p className="heading-2">THE LORE BEHIND TONETELLER</p>
-        <button className="primary-button heading-5">Read our story</button>
+        <form
+          action="https://devpost.com/software/512332/joins/S2XZ4vcd7goRNHkjHkKCMQ"
+          target="_blank"
+        >
+          <input
+            className="primary-button heading-5 px-80"
+            type="submit"
+            value="Read our story"
+          />
+        </form>
       </div>
 
       <div className="meet-the-team-div">
