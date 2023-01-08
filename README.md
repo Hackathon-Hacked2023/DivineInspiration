@@ -10,12 +10,11 @@ https://devpost.com/software/toneteller
 
 ![toneteller1](https://user-images.githubusercontent.com/90366819/211209123-13af2b9c-f248-45bd-af01-be72a2532a95.png)
 
-<img width="959" <img width="960" alt="happy" src="https://user-images.githubusercontent.com/90366819/211210494-c2f6b42b-8c2e-4d10-9a80-c1804650cb9d.PNG">
+<img width="960" alt="happy" src="https://user-images.githubusercontent.com/90366819/211210494-c2f6b42b-8c2e-4d10-9a80-c1804650cb9d.PNG">
 
 <img width="960" alt="tonetellerreal" src="https://user-images.githubusercontent.com/90366819/211210510-833f5b2b-758a-4f82-be41-b739076cf885.PNG">
 
 <img width="960" alt="happy" src="https://user-images.githubusercontent.com/90366819/211210551-6d2bcce5-e093-4b51-b1bc-4d426fa8edb9.PNG">
-
 
 Members: 
   - Aniket Mishra     
