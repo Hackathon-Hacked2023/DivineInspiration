@@ -53,13 +53,13 @@ p {
 
 .heading-1 {
     font-family: Abyss;
-    font-size: 4.5rem; /* 72px */
+    font-size: 3.5rem;
     line-height: 1;
 }
 
 .heading-2 {
     font-family: Abyss;
-    font-size: 3.75rem; /* 60px */
+    font-size: 3.125rem; /* 60px */
     line-height: 1;
     margin-bottom: 30px;
 }
@@ -100,14 +100,14 @@ p {
 
 .body-text {
     font-family: 'Cantarell';
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.5rem;
 }
 
 .body-title {
     font-family: 'Cantarell';
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.125rem;
     font-weight: 700;
 }
 
@@ -120,7 +120,7 @@ p {
 .overline-text {
     font-family: 'Cantarell';
     font-weight: 700;
-    font-size: 0.75rem; /* 12px */
+    font-size: 0.875rem; /* 12px */
     line-height: 1rem; /* 16px */
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -134,6 +134,12 @@ p {
     border: 2px solid #000000;
     box-shadow: 8px 8px 0px #000000;
     border-radius: 10px;
+}
+
+
+.button-sm {
+    padding: 8px 12px !important;
+    box-shadow: 4px 4px 0px #000000;
 }
 
 .background-white {
