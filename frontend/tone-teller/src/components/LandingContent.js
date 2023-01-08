@@ -233,14 +233,6 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-violet">
-                <img src="/images/developer5.png"></img>
-              </div>
-              <p className="heading-4">ANIKET</p>
-              <p className="heading-6">Full Stack developer</p>
-            </div>
-            
           <div className="meet-the-team-row">
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-pink">
@@ -261,13 +253,20 @@ export default function Hero() {
 
           <div className="meet-the-team-row">
             <div className="meet-the-team-column">
+              <div className="meet-the-team-img background-violet">
+                <img src="/images/developer5.png"></img>
+              </div>
+              <p className="heading-4">ANIKET</p>
+              <p className="heading-6">Full Stack developer</p>
+            </div>
+
+            <div className="meet-the-team-column">
               <div className="meet-the-team-img background-sky">
                 <img src="/images/developer2.png"></img>
               </div>
               <p className="heading-4">CHRIS</p>
               <p className="heading-6">Designer</p>
             </div>
-
           </div>
         </div>
       </div>
