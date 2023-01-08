@@ -37,7 +37,7 @@ function NavHeader() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
                 About
               </Link>
             </li>
@@ -58,15 +58,15 @@ function NavHeader() {
 
             <li>
               <Link
-                to="/sign-up"
+                to="/toneteller"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Try Tone Teller!
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && <Button buttonStyle="btn--outline">Try Tone Teller</Button>}
         </div>
       </nav>
     </>

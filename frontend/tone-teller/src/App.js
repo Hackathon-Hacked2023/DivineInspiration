@@ -8,23 +8,24 @@ import NavHeader from "./components/NavHeader";
 import Footer from "./components/Footer";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from './components/pages/About';
+// import About from './components/pages/About';
 import ChromeExtension from './components/pages/ChromeExtension';
 import FAQ from './components/pages/FAQ';
-import SignUp from './components/pages/SignUp';
+import ToneTeller from './components/pages/ToneTeller';
 
 function App() {
   return (
     <>
       <Router>
         <NavHeader />
-        <Hero></Hero>
-        <LandingContent></LandingContent>
+        {/* <Hero></Hero>
+        <LandingContent></LandingContent> */}
         <Routes>
-          <Route path='/about' component={About} />
-          <Route path='/chrome' component={ChromeExtension} />
-          <Route path='/FAQ' component={FAQ} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<LandingContent/>} />
+          <Route path="/chrome" element={<ChromeExtension />} />
+          <Route path="/faq" element={<FAQ />}> </Route>
+          <Route path="/toneteller" element={<ToneTeller />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,4 +1,5 @@
 import "./style/Hero.css";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -11,8 +12,7 @@ export default function Hero() {
         Tired of trying to decipher the tone of an email or text message? Do you
         want to communicate with greater empathy and understanding?
       </p>
-
-      <button className="heading-6 primary-button">Try Toneteller today</button>
+      <Link to="/toneteller" className="heading-6 primary-button" style={{ textDecoration: 'none' }}> Try Toneteller today</Link>
     </div>
   );
 }
