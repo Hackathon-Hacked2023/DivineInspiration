@@ -5,8 +5,7 @@ import Home from "./components/Home";
 // import the landing page from the components folder
 import NavHeader from "./components/NavHeader";
 import Footer from "./components/Footer";
-
-import Landing from "./components/Landing";
+import Toneteller from "./components/Toneteller";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/pages/About";
@@ -18,8 +17,8 @@ function App() {
   return (
     <>
       <Router>
-        <NavHeader />
-        <Landing></Landing>
+        {/* <NavHeader /> */}
+        <Toneteller></Toneteller>
         <Routes>
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
@@ -27,7 +26,7 @@ function App() {
           <Route path="/FAQ" component={FAQ} />
           <Route path="/sign-up" component={SignUp} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );

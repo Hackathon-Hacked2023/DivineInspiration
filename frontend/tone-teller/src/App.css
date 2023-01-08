@@ -136,6 +136,12 @@ p {
     border-radius: 10px;
 }
 
+
+.button-sm {
+    padding: 8px 12px !important;
+    box-shadow: 4px 4px 0px #000000;
+}
+
 .background-white {
     background-color: var(--white);
 }
