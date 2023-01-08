@@ -13,16 +13,40 @@ export default function Toneteller() {
   return (
     // add textbox
     <div className="toneteller-div">
-      {print ? <h1>{data}</h1> : null}
+      <div className="toneteller-text">
+        {print ? (
+          <div className="heading-3">Analyzing sentiment...</div>
+        ) : (
+          <div className="heading-3">Welcome to Toneteller!</div>
+        )}
+        {print ? (
+          <div className="caption-text">Analyzing sentiment for prompt:</div>
+        ) : (
+          <div className="body-text">{null}</div>
+        )}
+        {print ? (
+          <div className="body-text">{data}</div>
+        ) : (
+          <div className="body-text">
+            Tired of trying to decipher the tone of an email or text message? Do
+            you want to communicate with greater empathy and understanding?
+            Enter a prompt below and decipher the tone and sentiment of its
+            writer.
+          </div>
+        )}
+      </div>
 
-      <div className="toneteller-input-div">
-        <input type="text" onChange={getData} />
-        <button
-          className="primary-button button-sm body-title"
-          onClick={() => setPrint(true)}
-        >
-          Analyze
-        </button>
+      <div className="enter-prompt-div">
+        <div className="enter-prompt-input-text body-title">Enter a prompt</div>
+        <div className="toneteller-input-div">
+          <input type="text" onChange={getData} />
+          <button
+            className="primary-button button-sm body-title"
+            onClick={() => setPrint(true)}
+          >
+            Analyze
+          </button>
+        </div>
       </div>
     </div>
   );

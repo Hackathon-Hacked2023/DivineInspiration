@@ -1,14 +1,38 @@
 .toneteller-div {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    justify-content: space-between;
 }
 
 .toneteller-input-div {
     display: flex;
-     gap: 10px;
+    gap: 10px;
 }
 
 .toneteller-input-div > input {
+    padding: 12px;
     width: 100%;
     border: 2px solid #000;
     border-radius: 4px;
+    font-family: 'Cantarell';
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.toneteller-text, .enter-prompt-div {
+    padding: 20px;
+}
+
+.toneteller-text > .heading-3 {
+   margin-bottom: 10px;
+}
+
+.enter-prompt-div {
+    background-color: var(--yellow-100);
+    border-top: 2px solid var(--black);
+}
+
+.enter-prompt-input-text {
+    margin-bottom: 10px;
 }
