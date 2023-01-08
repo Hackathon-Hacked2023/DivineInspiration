@@ -1,9 +1,28 @@
 /*
+PADDING
+*/
+.what-is-toneteller-div, .who-can-use-toneteller-div, .meet-the-team-column, .cta, .meet-the-team-div, .how-does-it-work-div {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.px-40 {
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+/*
 WHAT IS TONETELLER?
 */
 .what-is-toneteller-div {
     background-color: var(--yellow-100);
-    padding: 20px;
 }
 
 .what-is-toneteller-grid {
@@ -18,7 +37,7 @@ WHAT IS TONETELLER?
     border: 2px solid #000000;
     border-radius: 10px;
     width: 120px;
-    height: auto;
+    height: 120px;
     aspect-ratio: 1 / 1;
     margin-bottom: 20px;
 }
@@ -27,7 +46,6 @@ WHAT IS TONETELLER?
 WHO CAN USE TONETELLER?
 */
 .who-can-use-toneteller-div {
-    padding: 20px;
     background-color: var(--yellow-50);
 }
 
@@ -45,7 +63,6 @@ BANNER
 CTA
 */
 .cta {
-    padding: 20px;
     padding-bottom: 40px;
     background-color: var(--yellow-400);
 }
@@ -54,10 +71,6 @@ CTA
 /*
 HOW DOES IT WORK
 */
-.how-does-it-work-div {
-    padding: 20px;
-}
-
 .how-does-it-work-img {
     border-radius: 10px;
     width: 100%;
@@ -89,7 +102,6 @@ LEARN MORE
 MEET THE TEAM
 */
 .meet-the-team-div {
-    padding: 20px;
     background-color: var(--yellow-200);
     padding-bottom: 40px;
 }
@@ -108,7 +120,6 @@ MEET THE TEAM
 }
 
 .meet-the-team-column {
-    padding: 20px;
     border: 4px solid #000000;
     box-shadow: 8px 8px 0px #000000;
     border-radius: 10px;
@@ -130,4 +141,135 @@ MEET THE TEAM
 .meet-the-team-img > img {
     padding: 20px;
     width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+    .cta > .overline-text {
+        margin-top: 80px;
+    }
+    
+    .cta > button {
+        margin-bottom: 80px;
+    }
+
+    .what-is-toneteller-grid {
+        flex-direction: row;
+    }
+
+    .what-is-toneteller-column {
+        width: calc(33.33333333333333333333333%);
+        flex-direction: column !important;
+    }
+
+    .column-50 > .how-does-it-work-img {
+        width: 75% !important;
+    }
+
+    .meet-the-team-div {
+        flex-direction: column !important;
+    }
+
+    .meet-the-team-div > div {
+        width: 100% !important;
+    }
+
+    .meet-the-team-grid {
+        flex-direction: row;
+    }
+
+    .meet-the-team-row {
+        width: 33.333333333333333333333%
+    }
+
+    .meet-the-team-column {
+        width: 50%;
+        padding: 20px !important;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .what-is-toneteller-div, .who-can-use-toneteller-div, .meet-the-team-column, .cta, .meet-the-team-div, .how-does-it-work-div {
+        padding: 40px;
+    }
+    
+    .what-is-toneteller-div, .who-can-use-toneteller-div, .cta, .meet-the-team-div, .how-does-it-work-div {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }   
+    
+    .meet-the-team-div > div {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .p-60 {
+        width: 75%;
+    }
+
+    .what-is-toneteller-div, .who-can-use-toneteller-div, .cta, .meet-the-team-div, .how-does-it-work-div {
+        padding-left: 40px;
+        padding-right: 40px;
+    }    
+
+    .what-is-toneteller-column {
+        flex-direction: row;
+        display: flex;
+        gap: 20px;
+    }
+
+    .column-50 {
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column-50 > .how-does-it-work-img {
+        width: 40%;
+    }
+
+    .what-is-toneteller-text {
+        width: 80%;
+    }
+    
+    .meet-the-team-div {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+    .meet-the-team-img {
+        width: 100%;
+    }
+
+    .meet-the-team-text {
+        width: fit-content;
+    }
+
+    .cta {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .meet-the-team-row {
+        flex-direction: column;
+    }
+    
+    .meet-the-team-column {
+        width: 100%;
+    }
+
+    .meet-the-team-img {
+       height: auto;
+       aspect-ratio: 4/2;
+       justify-content: center;
+       display: flex;
+    }
+
+    .meet-the-team-img > img {
+        width: 50%;
+    }
 }
