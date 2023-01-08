@@ -192,3 +192,45 @@ p {
 .background-pink {
     background-color: var(--pink);
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Canterella', sans-serif;
+  }
+  
+  .about,
+  .chrome,
+  .FAQ  ,
+  .sign-up {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  
+  .chrome {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .FAQ {
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .sign-up {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }

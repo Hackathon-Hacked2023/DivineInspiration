@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Testing Ext",
+    "name": "Toneteller",
     "version": "1",
     "description": "just testing",
     "icons": {
@@ -10,7 +10,7 @@
         "128": "imgs/longbread128.png"
     },
     "background": {
-        "service_worker": "scripts/printSelected.js"
+        "service_worker": "scripts/background.js"
     },
     "content_scripts": [
         {
@@ -24,5 +24,9 @@
     ],
     "permissions": [
         "contextMenus"
-    ]
+    ],
+    "action": {
+        "default_title": "Toneteller!",
+        "default_popup": "scripts/action.html"
+    }
 }
