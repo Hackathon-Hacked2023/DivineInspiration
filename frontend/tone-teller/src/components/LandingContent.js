@@ -4,14 +4,15 @@ import "./style/LandingContent.css";
 const colors = {};
 
 export default function Hero() {
+  console.log("in landing content")
   return (
     <div className="landing-content">
       <div className="what-is-toneteller-div">
-        <p className="overline-text p-60">WHAT IS TONETELLER?</p>
-        <p className="heading-5 p-60">
+        <p className="overline-text">WHAT IS TONETELLER?</p>
+        <p className="heading-5">
           The ultimate tool for understanding tone in written communication.
         </p>
-        <p className="body-text p-60">
+        <p className="body-text">
           Our application uses state-of-the-art artificial intelligence to
           analyze text and accurately detect the tone of a message, including,
           happy, sad, angry, and more. With Toneteller, you will never have to
@@ -20,6 +21,7 @@ export default function Hero() {
 
         <div className="what-is-toneteller-grid">
           <div className="what-is-toneteller-column">
+ 
             <div className="what-is-toneteller-img background-pink">
               <img src="/images/what_is_toneteller_1.png"></img>
             </div>
@@ -62,16 +64,17 @@ export default function Hero() {
                 words.
               </p>
             </div>
+
           </div>
         </div>
       </div>
 
       <div className="who-can-use-toneteller-div">
-        <p className="overline-text p-60">WHO CAN USE TONETELLER?</p>
-        <p className="heading-5 p-60">
+        <p className="overline-text">WHO CAN USE TONETELLER?</p>
+        <p className="heading-5">
           Developed by communicators, for communicators.
         </p>
-        <p className="body-text p-60">
+        <p className="body-text">
           Whether you're a business professional looking to better understand
           clients and colleagues, a student trying to improve your comprehension
           of written texts, or anyone who wants to communicate more effectively
@@ -80,6 +83,7 @@ export default function Hero() {
 
         <div className="what-is-toneteller-grid">
           <div className="what-is-toneteller-column">
+
             <div className="what-is-toneteller-img background-sky">
               <img src="/images/who_can_use_toneteller_1.png"></img>
             </div>
@@ -128,6 +132,7 @@ export default function Hero() {
                 particularly useful for those who are just starting out.
               </p>
             </div>
+
           </div>
         </div>
       </div>
@@ -152,6 +157,7 @@ export default function Hero() {
         <p className="overline-text p-60">YOU MIGHT BE WONDERING...</p>
         <p className="heading-5 p-60">How exactly does Toneteller work?</p>
         <p className="body-text p-60">
+
           Toneteller uses machine learning to perform sentiment analysis on text
           inputted by the user. The machine learning model is hosted on a Flask
           server that is deployed on Google Cloud. When a user submits text
@@ -159,9 +165,11 @@ export default function Hero() {
           text through the machine learning model and returns the predicted
           tones to the client. The client then determines how to display the
           results on the screen.
+
         </p>
 
         <div className="what-is-toneteller-grid">
+
           <div className="what-is-toneteller-column column-50">
             <div className="how-does-it-work-img">
               <img src="/images/step_one.png"></img>
@@ -175,12 +183,14 @@ export default function Hero() {
 
               </p>
             </div>
+
           </div>
 
-          <div className="what-is-toneteller-column column-50">
+          <div className="what-is-toneteller-column">
             <div className="how-does-it-work-img">
               <img src="/images/step_two.png"></img>
             </div>
+
             <div className="what-is-toneteller-text">
               <p className="heading-6">
                 Use the Toneteller web application or Google Chrome extension
@@ -190,24 +200,28 @@ export default function Hero() {
                 paste into Toneteller's webpage!
               </p>
             </div>
+
           </div>
 
-          <div className="what-is-toneteller-column column-50">
+          <div className="what-is-toneteller-column">
             <div className="how-does-it-work-img">
               <img src="/images/step_three.png"></img>
             </div>
+
             <div className="what-is-toneteller-text">
               <p className="heading-6">And that's it!</p>
               <p className="body-text">
                 Toneteller will ten show you the predicted tone!
               </p>
             </div>
+
           </div>
         </div>
       </div>
 
       <div className="cta download-extension-div">
         <p className="overline-text">AVAILABLE NOW</p>
+
         <p className="heading-2 px-40">
           DOWNLOAD OUR EXTENSION FOR GOOGLE CHROME
         </p>
@@ -221,6 +235,7 @@ export default function Hero() {
             value="Download"
           />
         </form>
+
       </div>
       <div className="cta learn-more-div">
         <p className="overline-text">LEARN MORE ABOUT</p>
@@ -237,13 +252,7 @@ export default function Hero() {
         </form>
       </div>
 
-      <div className="meet-the-team-div">
-        <div className="meet-the-team-text">
-          <p className="overline-text">MADE WITH LOVE BY</p>
-          <p className="heading-3">THE TONETELLER TEAM</p>
-        </div>
-
-        <div className="meet-the-team-grid">
+      <div className="meet-the-team-grid">
           <div className="meet-the-team-row">
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-purple">
@@ -298,7 +307,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }
