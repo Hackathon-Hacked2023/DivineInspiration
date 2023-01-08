@@ -1,0 +1,10 @@
+
+{
+    "header":{"alg":"RS256","typ":"JWT"},
+    "target_audience": "https://toneteller-ezen7qibyq-uw.a.run.app/echo",
+    "iss":"124942220048-compute@developer.gserviceaccount.com",
+    "sub":"124942220048-compute@developer.gserviceaccount.com",
+    "iat":1673146740,
+    "exp":2673146740,
+    "aud":"https://www.googleapis.com/oauth2/v4/token"
+}
