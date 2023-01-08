@@ -14,7 +14,7 @@ https://devpost.com/software/toneteller
 
 <img width="960" alt="tonetellerreal" src="https://user-images.githubusercontent.com/90366819/211210510-833f5b2b-758a-4f82-be41-b739076cf885.PNG">
 
-<img width="960" alt="happy" src="https://user-images.githubusercontent.com/90366819/211210551-6d2bcce5-e093-4b51-b1bc-4d426fa8edb9.PNG">
+<img width="960" alt="toneteller real 3" src="https://user-images.githubusercontent.com/90366819/211210627-98b4a2a6-12df-4f04-ba0e-39f03dba2102.PNG">
 
 Members: 
   - Aniket Mishra     
