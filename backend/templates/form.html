@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+        
+        <div class="content-section">
+                <form action="{{ url_for('submit') }}" method="POST">
+                        {{ form.hidden_tag() }}
+                        
+                        <fieldset class="form-group">
+                        
+                                <legend class="border-bottom mb-4">Please enter the text you want us to analyse: </legend>
+                                
+                                <div class="form-floating">
+                                
+                                        <label for="TextToAnalyse">Text: </label>
+                                        
+                                        <textarea type="text" name="text" class="form-control" placeholder="Please enter the text you want us to analyse:" id="TextToAnalyse" style="height: 100px"></textarea>
+                        
+                                </div>
+                        
+                        </fieldset>
+                        
+                        <div class="form-group">
+                                <input type="submit" class="btn btn-outline-info">
+                                
+                        </div>
+                        
+                </form>
+        </div>
+        
+{% endblock content %}
