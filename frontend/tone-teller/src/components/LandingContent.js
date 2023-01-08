@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./style/LandingContent.css";
 
 const colors = {};
@@ -126,9 +127,11 @@ export default function Hero() {
         <p className="heading-2">
           Say goodbye to guessing and hello to clarity WITH TONETELLER.
         </p>
-        <button className="primary-button heading-5">
-          Try Toneteller today
-        </button>
+        <Link to="/toneteller">
+          <button className="primary-button heading-5 px-80">
+            Try Toneteller today
+          </button>
+        </Link>
       </div>
 
       <img className="banner" src="/images/banner.png"></img>
@@ -137,11 +140,14 @@ export default function Hero() {
         <p className="overline-text p-60">YOU MIGHT BE WONDERING...</p>
         <p className="heading-5 p-60">How exactly does Toneteller work?</p>
         <p className="body-text p-60">
-          ToneTeller is supported on mobile and desktop devices. It uses the emotional analysis model EmoRoBERTa trained with the GoEmotions dataset to analyze texts
-          and labels with percentage match to 28 emotion labels. 
+        Toneteller uses machine learning to perform sentiment analysis on text inputted by the user. 
+        The machine learning model is hosted on a Flask server that is deployed on Google Cloud. When a user submits text through the web or chrome extension client, 
+        the server processes the text through the machine learning model and returns the predicted tones to the client. The client then determines how to display the results on the screen.
         </p>
-
+      
+      
         <div className="what-is-toneteller-grid">
+       
           <div className="what-is-toneteller-column column-50">
             <div className="how-does-it-work-img">
               <img src="/images/step_one.png"></img>
@@ -152,6 +158,7 @@ export default function Hero() {
               </p>
               <p className="body-text">
                 All you need to start using ToneTeller is a text that you wish to decifer!
+
               </p>
             </div>
           </div>
@@ -165,8 +172,7 @@ export default function Hero() {
                 Use the Toneteller web application or Google Chrome extension
               </p>
               <p className="body-text">
-                Enter your text directly into our web page or download the Chrome extension 
-                for a more convinient, automated experience.
+                  Right click and select "Toneteller" in the context menu, or paste into Toneteller's webpage!
               </p>
             </div>
           </div>
@@ -178,7 +184,7 @@ export default function Hero() {
             <div className="what-is-toneteller-text">
               <p className="heading-6">And that's it!</p>
               <p className="body-text">
-                We hope you find your analysis helpful!
+                Toneteller will ten show you the predicted tone!
               </p>
             </div>
           </div>
@@ -190,12 +196,30 @@ export default function Hero() {
         <p className="heading-2 px-40">
           DOWNLOAD OUR EXTENSION FOR GOOGLE CHROME
         </p>
-        <button className="primary-button heading-5">Download</button>
+        <form
+          action="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+          target="_blank"
+        >
+          <input
+            className="primary-button heading-5 px-80"
+            type="submit"
+            value="Download"
+          />
+        </form>
       </div>
       <div className="cta learn-more-div">
         <p className="overline-text">LEARN MORE ABOUT</p>
         <p className="heading-2">THE LORE BEHIND TONETELLER</p>
-        <button className="primary-button heading-5">Read our story</button>
+        <form
+          action="https://devpost.com/software/512332/joins/S2XZ4vcd7goRNHkjHkKCMQ"
+          target="_blank"
+        >
+          <input
+            className="primary-button heading-5 px-80"
+            type="submit"
+            value="Read our story"
+          />
+        </form>
       </div>
 
       <div className="meet-the-team-div">

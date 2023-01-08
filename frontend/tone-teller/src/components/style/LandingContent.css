@@ -136,10 +136,14 @@ MEET THE TEAM
 
 @media screen and (min-width: 1440px) {
     .cta > .overline-text {
-        margin-top: 80px;
+        margin-top: 80px !important;
     }
     
-    .cta > button {
+    .cta > .primary-button {
+        margin-bottom: 80px;
+    }
+
+    .px-80 {
         margin-bottom: 80px;
     }
 

@@ -36,6 +36,10 @@ function NavHeader() {
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <a className="nav-links" target="_blank" href="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1">Chrome Extension</a>
+            </li>
+
             <li>
               <Link
                 to="/toneteller"
