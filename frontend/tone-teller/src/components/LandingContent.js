@@ -199,7 +199,7 @@ export default function Hero() {
 
       <div className="meet-the-team-div">
         <div className="meet-the-team-text">
-          <p className="overline-text">MADE WITH LOVE BY</p>
+          <p className="overline-text">MADE EMOTIONALLY BY</p>
           <p className="heading-3">THE TONETELLER TEAM</p>
         </div>
 
