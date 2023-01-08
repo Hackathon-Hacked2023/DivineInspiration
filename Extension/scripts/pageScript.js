@@ -56,7 +56,7 @@ const insertMsgBoxAtPos = (doc, x, y, top, message, tone) => {
     box.style.cssText = `
         width: 20%;
         background: #FDF9F0;
-        border-radius: 10px;
+        border-radius: 4px;
         border: 2px solid #E9C46A;
         position: absolute;
         left: ${x + "px"};
@@ -70,14 +70,13 @@ const insertMsgBoxAtPos = (doc, x, y, top, message, tone) => {
     }
     // do rest of the styling in inner html
     box.innerHTML = `
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Roboto&display=swap" rel="stylesheet">
     <style>
         #ToneMessageBox > p {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Cantarell', sans-serif;
             margin: 10px 10px 10px 10px;
-            font-size: 15px;
+            font-size: 1rem;
+            line-height: 1.25rem;
         }
     </style>
     <p>${message}</p>

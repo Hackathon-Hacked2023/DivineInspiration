@@ -5,7 +5,7 @@ const print = console.log;
 chrome.contextMenus.create(
     {
         id: "stuff",
-        title: "Alert this!",
+        title: "Toneteller",
         contexts: ["selection"],
     },
 

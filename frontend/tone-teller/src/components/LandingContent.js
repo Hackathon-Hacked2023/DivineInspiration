@@ -3,6 +3,7 @@ import "./style/LandingContent.css";
 const colors = {};
 
 export default function Hero() {
+  console.log("in landing content")
   return (
     <div className="landing-content">
       <div className="what-is-toneteller-div">
@@ -205,6 +206,14 @@ export default function Hero() {
             </div>
           </div>
 
+          <div className="meet-the-team-column">
+              <div className="meet-the-team-img background-violet">
+                <img src="/images/developer5.png"></img>
+              </div>
+              <p className="heading-4">ANIKET</p>
+              <p className="heading-6">Full Stack developer</p>
+            </div>
+            
           <div className="meet-the-team-row">
             <div className="meet-the-team-column">
               <div className="meet-the-team-img background-pink">
@@ -232,13 +241,6 @@ export default function Hero() {
               <p className="heading-6">Designer</p>
             </div>
 
-            <div className="meet-the-team-column">
-              <div className="meet-the-team-img background-violet">
-                <img src="/images/developer5.png"></img>
-              </div>
-              <p className="heading-4">ANIKET</p>
-              <p className="heading-6">AI guy</p>
-            </div>
           </div>
         </div>
       </div>

@@ -28,7 +28,6 @@ let tones = {
     surprise: "surprise 😮",
     sadness: "sadness 😭",
     nervousness: "nervousness 😖",
-
     neutral: "neutral 😑"
 }
 
@@ -40,8 +39,8 @@ print("HELP ME")
 document.getElementById('actionSubmit').onclick = () => {
 
     textField = document.getElementById("inputField");
-    textContent = textField.textContent;
-    print("in onclick", textContent)
+    textContent = textField.value;
+ 
     fetch("https://tone-teller-ezen7qibyq-nn.a.run.app/tonetelling", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -55,6 +54,7 @@ document.getElementById('actionSubmit').onclick = () => {
         (res) => res.json()
     ).then(
         (data) => {
+            print(data)
             t = tones[data[0][0]['label']];
             if (t == undefined) {
                 print("undefined!", data[0][0]['label'])
