@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DivineInspiration/static/css/main.7e13e34a.css",
+    "main.js": "/DivineInspiration/static/js/main.b6e626cb.js",
+    "static/media/Abyss.otf": "/DivineInspiration/static/media/Abyss.260a555118f594b3aebd.otf",
+    "static/media/loop.svg": "/DivineInspiration/static/media/loop.e5e8242367c734c9d247.svg",
+    "index.html": "/DivineInspiration/index.html",
+    "main.7e13e34a.css.map": "/DivineInspiration/static/css/main.7e13e34a.css.map",
+    "main.b6e626cb.js.map": "/DivineInspiration/static/js/main.b6e626cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e13e34a.css",
+    "static/js/main.b6e626cb.js"
+  ]
+}
