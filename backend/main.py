@@ -1,15 +1,16 @@
 # py -m flask run
 
 from flask import Flask, render_template, url_for, flash, redirect, request, jsonify
-
+from flask_cors import CORS
 import os
 from transformers import pipeline
 
-print(os.getcwd())
+print("help", os.getcwd(), os.listdir())
 modelPath = "./model"
 emotion = pipeline("sentiment-analysis", model=modelPath, tokenizer=modelPath, top_k = None)
 
 app = Flask(__name__)
+CORS(app)
 app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 
 # @app.route("/")

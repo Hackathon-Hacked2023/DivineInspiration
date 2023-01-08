@@ -87,9 +87,23 @@ document.addEventListener("scroll", () => {
 chrome.runtime.onMessage.addListener((msg, sender, responder) => {
 
     if (msg.startsWith("alert")) {
-        // alert(msg.slice(5, msg.length - 1));
+        fetch("http://127.0.0.1:8080/tonetelling", {
+            method:"POST",
+            headers: {"Content-Type": 'application/json'},
+            mode: 'cors',
+            body: JSON.stringify(
+                {
+                    "input": msg.slice(5, msg.length)
+                }
+            )
+        }).then((res)=>{
+           return res.json();
+        }).then((data)=>{
+            print(data)
+        })
         insertMsgBoxAtPos(document, mouseX, mouseY, topPos, msg.slice(5, msg.length), "happy");
     }
 });
+
 
 

@@ -12,7 +12,6 @@ chrome.contextMenus.create(
 )
 
 const alertThis = (selection, tab) => {
-
     if (selection.menuItemId === 'stuff') {
         print(selection)
         chrome.tabs.sendMessage(
