@@ -159,6 +159,12 @@
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 400px) {
+  .footer-img {
+    height: 2rem;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .footer-links {
     padding-top: 2rem;

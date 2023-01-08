@@ -9,6 +9,14 @@ PADDING
     text-align: center;
 }
 
+.what-is-toneteller-img {
+    padding: 20px;
+}
+
+.what-is-toneteller-img > img {
+    width: 100%;
+}
+
 /*
 WHAT IS TONETELLER?
 */
