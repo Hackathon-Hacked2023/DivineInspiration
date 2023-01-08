@@ -12,3 +12,15 @@ Members:
   - Ray
   - Christina
   
+# Techstack
+- Web page:
+  + React js
+- Chrome extension:
+  + Chrome extension apis
+  + Js/html/css
+- Backend server:
+  - Flask/Python
+  - [EmoRoBERTa](https://huggingface.co/arpanghoshal/EmoRoBERTa) Sentiment analysis
+- Deployment:
+  - Google cloud for Flask server
+  - Github Pages for React web page.
