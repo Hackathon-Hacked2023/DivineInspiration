@@ -13,11 +13,14 @@ def home():
     return render_template('form.html', title='Register', form = form)
 
 
-@app.route('/submit/', methods=['POST'])
+@app.route('api/submit/', methods=['POST'])
 def submit():
     if request.method == 'POST':
-        form_data = request.form
-        return render_template('results.html', result = form_data['text'])
+        data = request.get_json()
+        
+        # return data + hello world
+        return data + "hello world"
+
 
 
 if __name__ == '__main__':
