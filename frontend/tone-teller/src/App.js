@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import NavHeader from "./components/NavHeader";
 import Footer from "./components/Footer";
 
+import Landing from "./components/Landing";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/pages/About";
 import ChromeExtension from "./components/pages/ChromeExtension";
@@ -17,7 +19,7 @@ function App() {
     <>
       <Router>
         <NavHeader />
-        <ChromeExtension></ChromeExtension>
+        <Landing></Landing>
         <Routes>
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
