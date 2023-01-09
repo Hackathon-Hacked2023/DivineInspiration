@@ -241,7 +241,7 @@ export default function Hero() {
         <p className="overline-text">LEARN MORE ABOUT</p>
         <p className="heading-2">THE LORE BEHIND TONETELLER</p>
         <form
-          action="https://devpost.com/software/512332/joins/S2XZ4vcd7goRNHkjHkKCMQ"
+          action="https://devpost.com/software/toneteller"
           target="_blank"
         >
           <input

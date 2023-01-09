@@ -62,7 +62,7 @@ function NavHeader() {
             <a
               className="heading-4"
               target="_blank"
-              href="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+              href="https://devpost.com/software/toneteller"
             >
               Devpost
             </a>
@@ -70,7 +70,7 @@ function NavHeader() {
             <a
               className="heading-4"
               target="_blank"
-              href="https://github.com/Hackathon-Hacked2023/DivineInspiration/releases/tag/v1"
+              href="https://github.com/Hackathon-Hacked2023/DivineInspiration"
             >
               Github
             </a>
